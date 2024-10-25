@@ -1,74 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bandeiras</title>
 
     <style>
-    *{border: 1px solid black;}
+       
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        .bandeira {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+      
+    
+        .bandeira:hover {
+            transform: scale(1.05);
+            width: 310px;
+            height: 330px;
+        }
+    
 
-    .container{
-        display: flex;
-        justify-content: space-between;
-        margin: 20px ;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-    .italia{
-        display: flex;
-        width: 180px;
-        height: 100px;
-        border: 1px solid white;
-    }
-    .italia.verde{background-color: green;}
-    .italia.branca{background-color: white;}
-    .italia.red{background-color: red;}
-
-    .franca{
-        display: flex;
-        width: 180px;
-        height: 100px;
-        border: 1px solid white;
-    }
-    .franca.azul{background-color: blue;}
-    .franca.branca{background-color: white;}
-    .franca.red{background-color: red;}
-
-    .japao{
-        display: flex;
-        width: 180px;
-        height: 100px;
-        border: 1px solid white;
-    }
-    .japao.Circle{
-        width: 50px;
-        height: 50px;
-        background-color: red;
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50px, -50px);
-    }
+        #Italia {
+            display: grid;
+            border: 1px solid black;
+            grid-template-columns: 1fr 2fr 1fr;
+            overflow: hidden;
 
 
+        }
 
+        .Green {
+            background-color: green;
+            width: 90px;
+            height: 225px;
+        }
+        .White {
+            background-color: white;
+            width: 90px;
+            height: 225px;
+        }
+
+        .Red {
+            background-color: red;
+            width: 90px;
+            height: 225px;
+        }
+        
+
+        #Holanda {
+            border: 1px solid black;
+            overflow: hidden;
+
+        }
+
+        .RedH {
+            background-color: red;
+            width: 300px;
+            height: 75px;
+            
+        }
+
+        .WhiteH {
+            background-color: white;
+            width: 300px;
+            height: 75px;
+        }
+
+        .BlueH {
+            background-color: rgb(4, 4, 166);
+            width: 300px;
+            height: 75px;
+        }
+
+        #Japao {
+            display: flex;
+            overflow: hidden;
+            
+        }
+
+        .WhiteJ {
+            background-color: white;
+            border: 1px solid black;
+            width: 300px;
+            height: 225px;
+        }
+
+        .Circulo {
+            width: 100px;
+            height: 100px;
+            margin: 60px auto 20px auto;
+            background-color: red;
+            border-radius: 50%;
+        }
     </style>
 </head>
+
 <body>
-    <div class="italia">
-        <div class="verde"></div>
-        <div class="branca"></div>
-        <div class="red"></div>
+    <div class="container">
+        <div class="bandeira" id="Italia">
+            <div class="Green"></div>
+            <div class="White"></div>
+            <div class="Red"></div>
+        <div>Itália</div>
+        </div>
+
+        <div class="bandeira" id="Holanda">
+            <div class="RedH"></div>
+            <div class="WhiteH"></div>
+            <div class="BlueH"></div>
+        <div>Holanda</div>
+        </div>
+
+        <div class="bandeira" id="Japão">
+            <div class="WhiteJ">
+            <div class="Circulo"></div>
+        <div> Japão </div>
+        </div>
+            
+        </div>
     </div>
-    <div class="franca">
-        <div class="azul"></div>
-        <div class="branca"></div>
-        <div class="red"></div>
-    </div>
-    <div class="franca">
-        <div class="Circle"></div>
-    </div>
+
 </body>
+
 </html>
