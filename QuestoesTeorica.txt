@@ -1,0 +1,51 @@
+1.Explique o que ocorre em um acesso a uma página na web, 
+descreva todas etapas e protocolos envolvidos até a carga completa do site.
+
+R: Quando um usuario digita uma URL ou clica em um link, o navegador envia uma HTTP para o servidor correspondente.
+Uma vez que o endereço IP é obtido, o navegador estabelece uma conexão com o servidor.
+Após a conexão ser estabelecida, o navegador envia uma solicitação HTTP ao servidor , pedindo o conteúdo da página.
+O servidor processa a solicitação, podendo executar scripts ou consultar banco de dados.
+O navegador recebe a resposta e começa a processar o HTML. Ele solicita arquivos, adiciona 
+como CSS e JavaScript, e começa a gerar a interface visual da página para o usuário.
+Durante o processamento HTML o navegador detecta imagens, arquivos CSS, scripts, JavaScript, etc, e faz nova solicitações para baixa-los.
+Após o carregamento de todos os recursos a linguagem de programação (ex:JavaScript) é executado para adicionar interatividade á pagina.
+A página é exibida ao usuario.
+
+2. Leia a frase e comente com completude e coerência .
+“ HTML é uma linguagem de programação de uso geral, assim como CSS, java e javascript.”
+HTML é a linguagem usada pra criar e estruturar páginas web, assim como CSS. Já o java e JavaScript
+são linguagem de programação de uso geral.
+
+3)SObre CSS responda.
+a)Quais são as formas de incluir css em um documento HTML cite as três e 
+explique que impacto isso tem no processamento das regras.
+As formas de incluir o CSS no HTML são : 
+incline: <style> são aplicadas diretamente nos elementos
+externo:<link> Para incluir folhas de estilo.
+interno: <style> dentro do <head> Para incluir estilo especifico em uma pagina.
+
+b)Como funcionam seletores CSS explique se necessário com exemplos.
+Os seletores servem para mudar elementos especificos no HTML
+Tag: seleciona os elementosde um tipo especifico
+p{
+    color: black;
+}
+
+Classe: aplicam a mudança no elemnto com uma classe usando o .
+.exemplo{
+    color: black;
+} 
+
+Hierarquia : seleciona elemento que esta dentro de outro
+div p{
+    color: black;
+}
+c)Como funcionam o posicionamento de elementos no HTML e CSS, descreva e 
+explique se necessário com exemplos.
+Os posicionamento define onde cada elemento vai ficar na pagina
+exemplo o grid
+.container{
+    display:flex;
+    justify-content: center 
+}
+alinha os itens no centro.
